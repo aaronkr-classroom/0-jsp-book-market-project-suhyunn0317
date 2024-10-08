@@ -1,12 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+<header class="pb-3 mb-4 border-bottom">
+		<a href="./welcome.jsp" class="d-flex align-items-center text-dark text-decoration-none">
+			<svg 
+			    	width="32" 
+			    	height="32" 
+			    	fill="currentcolor" 
+			    	class="bi bi-house-fill"
+			    	viewBox="0 0 16 16"
+			>
+					<path d="" />
+					<path d="" />
+			</svg>
+			<span class="fs-4">Home</span>
+		</a>
+	</header>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ page import="java.util.Date" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +26,7 @@
 
 
 	<%!
-	String greeting = "Welcome to Book Shopping Mall!";
+	String greeting = "도서 쇼핑몰에 오신 것을 환영합니다!";
 	String tagline = "Welcome to Web Market!";
 	%>
 	
@@ -41,6 +41,21 @@
 		<div class="col-md-12">
 			<div class="h-100 p-5">
 				<h3><%= tagline %></h3>
+					<%
+						Date day = new java.util.Date();
+						String am_pm;
+						int hour = day.getHours();
+						int minutes = day.getMinutes();
+						int second = day.getSecond();
+						if (hour/ 12==0){
+							am_pm="AM";
+						}else{
+							am_pm="pm";
+							hour = hour -12;
+						}
+						String CT = hour + ":" + minutes + "+" + second + " " + am_pm;
+						out.println("현재 접속 시간: " + CT + "\n");
+					%>
 			</div>
 		</div>
 	</div>
